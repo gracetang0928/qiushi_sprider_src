@@ -1,4 +1,4 @@
-'''
+﻿'''
 Created on Oct 19, 2016
 
 @author: grace.tang
@@ -18,7 +18,7 @@ class DBhandler:
     
     def close(self):
         self.db.close()
-        
+#执行单行统计函数，返回统计的值，用以判断数据是否已经存在       
     def getSelectResult(self,sql):
         self.cursor.execute(sql)
         data = self.cursor.fetchall()
